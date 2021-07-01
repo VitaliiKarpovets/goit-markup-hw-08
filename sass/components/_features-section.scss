@@ -1,26 +1,31 @@
 .features {
-  display: flex;
   list-style: none;
   padding: 0px;
   margin-top: 0;
   margin-bottom: 0;
 
   &__item {
-    width: 270px;
+    width: 100%;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 
   &__item:not(:last-child) {
     margin-right: 30px;
   }
 
-  &__icon {
+  &__icons {
+    // display: block;
     text-align: center;
     background-color: #f5f4fa;
-    padding: 25px 100px;
+    padding: 25px 190px;
     margin-bottom: 30px;
   }
 
   &__title {
+    text-align: center;
     color: $title-text-color;
     font-weight: bold;
     font-size: 14px;
@@ -38,4 +43,8 @@
     letter-spacing: 0.03em;
     margin: 0;
   }
+}
+
+.features__icon {
+  display: block;
 }

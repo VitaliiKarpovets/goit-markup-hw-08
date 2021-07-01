@@ -1,6 +1,4 @@
 .page-header {
-  border-bottom: 1px solid #ececec;
-
   &__media {
     list-style: none;
     display: flex;
@@ -9,6 +7,10 @@
     padding: 0px;
     margin-top: 0;
     margin-bottom: 0;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__item {
