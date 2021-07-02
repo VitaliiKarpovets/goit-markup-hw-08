@@ -8,3 +8,25 @@
     min-height: 60px;
   }
 }
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-svg {
+  fill: currentColor;
+}
+
+// .menu-toggle {
+//   background-color: $white-color;
+//   padding: 0;
+// }
