@@ -217,7 +217,7 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero .box {
-    background-image: url(..//..//images/mobile-menu/Header-img@2x.jpg);
+    background-image: url("..//..//images/mobile-menu/Header-img@2x.jpg");
   }
 }
 
