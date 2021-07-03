@@ -7,12 +7,20 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/img9.jpg);
+    url(/images/mobile-menu/Header-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: auto;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .box {
+      background-image: url(/images/mobile-menu/Header-img@2x.jpg);
+    }
+  }
 
   &__title {
     margin-top: 0px;

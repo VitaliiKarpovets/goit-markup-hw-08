@@ -207,12 +207,18 @@ body {
   max-width: 480px;
   height: 400px;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img9.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/mobile-menu/Header-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero .box {
+    background-image: url(/images/mobile-menu/Header-img@2x.jpg);
+  }
 }
 
 .hero__title {
@@ -256,22 +262,20 @@ body {
 }
 
 .features__item {
-  width: 100%;
+  max-width: 100%;
 }
 
 .features__item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.features__item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .features__icons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
-  padding: 25px 190px;
   margin-bottom: 30px;
+  height: 120px;
 }
 
 .features__title {
@@ -446,7 +450,8 @@ body {
 }
 
 .clients-icons__button {
-  padding: 16px 52px;
+  width: 100%;
+  height: 92px;
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid #afb1b8;
