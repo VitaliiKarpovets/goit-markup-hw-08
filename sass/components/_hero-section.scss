@@ -12,7 +12,7 @@
   background-position: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin: auto;
+  margin: 0;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -22,11 +22,30 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("..//..//images/tablet/HeaderTablet.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .box {
+        background-image: url("..//..//images/tablet/Headertablet@2x.jpg");
+      }
+    }
+  }
+
   &__title {
     margin-top: 0px;
     margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     color: $white-color;
     font-weight: 900;
     font-size: 26px;

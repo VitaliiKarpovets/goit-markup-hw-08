@@ -33,3 +33,18 @@
     margin-top: 8px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .address-social {
+    display: flex;
+
+    .address-info {
+      margin-right: 165px;
+      padding-left: 76px;
+    }
+
+    .social-invite {
+      padding-top: 5px;
+    }
+  }
+}

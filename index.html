@@ -14,22 +14,27 @@
 <body>
     <header class="page-header">
         <div class="container page-header__container">
+            <a href="./index.html" class="logo"> <span class="logo__primary">Web</span>Studio</a>
             <nav class="page-header__navbar">
-                <a href="./index.html" class="logo"> <span class="logo__primary">Web</span>Studio</a>
                 <ul class="nav">
                     <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current">Студия</a></li>
                     <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="page-header__media">
-                <li class="page-header__item"><a href="mailto:info@devstudio.com" class="page-header__link"><svg class="page-header__icon" width="16px" height="12px">
-                    <use href="./images/svg/symbol-defs.svg#envelope"></use>
-                </svg>info@devstudio.com</a></li>
-                <li class="page-header__item"><a href="tel:+380961111111" class="page-header__link"><svg class="page-header__icon" width="10px" height="16px">
-                    <use href="./images/svg/symbol-defs.svg#smartphone"></use>
-                </svg>+38 096 111 11 11</a></li>
-            </ul>
+            <div>
+                <ul class="page-header__media">
+                    <li class="page-header__item"><a href="mailto:info@devstudio.com" class="page-header__link"><svg
+                                class="page-header__icon" width="14px" height="10px">
+                                <use href="./images/svg/symbol-defs.svg#envelope"></use>
+                            </svg>info@devstudio.com</a></li>
+                    <li class="page-header__item"><a href="tel:+380961111111" class="page-header__link"><svg class="page-header__icon"
+                                width="10px" height="14px">
+                                <use href="./images/svg/symbol-defs.svg#smartphone"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                </ul>
+
+            </div>
             <button class="menu-toggle js-open-menu menu-button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="menu-svg" width="24" height="16"
                 aria-label="Переключатель мобильного меню">
@@ -127,7 +132,12 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team">
                     <li class="team__list">
-                        <img srcset="./images/mobile-menu/team1.jpg 1x, ./images/mobile-menu/team1.jpg 2x" src="./images/mobile-menu/team1.jpg" alt="img1" class="team__image" width="450">
+                        <img srcset="./images/mobile-menu/team1.jpg 480w, 
+                            ./images/mobile-menu/team1.jpg 7" 
+                            src="./images/mobile-menu/team1.jpg" 
+                            alt="img1" class="team__image"
+                            width="450">
+                            <!-- sizes="(min-width: 1140px) 25vw, (min-width: 768px) 50vw, 100vw"/> -->
                         <div class="team__info">
                             <p class="team__member">Игорь Демьяненко</p>
                             <p class="team__position">Product Designer</p>
@@ -298,6 +308,7 @@
 
     <footer class="footer">
         <div class="container footer-container">
+            <div class="address-social">
             <div class="address-info">
                 <a href="./index.html" class="logo footer__logo"> <span class="logo__primary">Web</span>Studio</a>
                 <address>
@@ -315,33 +326,39 @@
                 </address>
             </div>
             <div class="social footer__social">
-                    <p class="social-invite">присоединяйтесь</p>
-                    <ul class="member-socials">
-                        <li class="member-socials__item">
-                            <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px" height="20px">
-                                    <use href="./images/svg/symbol-defs.svg#instagram"></use>
-                                </svg></button>
-                        </li>
-                        <li class="member-socials__item">
-                            <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px" height="20px">
-                                    <use href="./images/svg/symbol-defs.svg#twitter"></use>
-                                </svg></button>
-                        </li>
-                    
-                        </li>
-                        <li class="member-socials__item">
-                            <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px" height="20px">
-                                    <use href="./images/svg/symbol-defs.svg#facebook"></use>
-                                </svg></button>
-                        </li>
-                        <li class="member-socials__item">
-                            <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px" height="20px">
-                                    <use href="./images/svg/symbol-defs.svg#linkedin"></use>
-                                </svg></button>
-                        </li>
-                    </ul>
-
+                <p class="social-invite">присоединяйтесь</p>
+                <ul class="member-socials">
+                    <li class="member-socials__item">
+                        <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px"
+                                height="20px">
+                                <use href="./images/svg/symbol-defs.svg#instagram"></use>
+                            </svg></button>
+                    </li>
+                    <li class="member-socials__item">
+                        <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px"
+                                height="20px">
+                                <use href="./images/svg/symbol-defs.svg#twitter"></use>
+                            </svg></button>
+                    </li>
+            
+                    </li>
+                    <li class="member-socials__item">
+                        <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px"
+                                height="20px">
+                                <use href="./images/svg/symbol-defs.svg#facebook"></use>
+                            </svg></button>
+                    </li>
+                    <li class="member-socials__item">
+                        <button type="button" class="member-social__button"><svg class="member-social__button--fill" width="20px"
+                                height="20px">
+                                <use href="./images/svg/symbol-defs.svg#linkedin"></use>
+                            </svg></button>
+                    </li>
+                </ul>
+            
             </div>
+            </div>
+
             <div class="submit-request">
                 <p class="submit-invite">подпишитесь на рассылку</p>
                 <form class="form-submit">
