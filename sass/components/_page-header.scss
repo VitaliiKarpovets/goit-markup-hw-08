@@ -2,6 +2,8 @@
   border-bottom: 1px solid #ececec;
 
   &__container {
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,6 +11,10 @@
 
     @media screen and (min-width: 768px) {
       min-height: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
     }
   }
 }

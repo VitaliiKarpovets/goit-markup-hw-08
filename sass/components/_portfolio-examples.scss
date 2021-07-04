@@ -9,6 +9,8 @@
 }
 
 .examples__list {
+  display: flex;
+  flex-direction: column;
   background-color: $white-color;
   box-sizing: border-box;
   //   flex-basis: calc(100% / 3 - 30px);
@@ -73,6 +75,7 @@
 }
 
 .example {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;

@@ -6,6 +6,10 @@
   margin-top: 0;
   margin-bottom: 0;
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
   &__link {
     color: $nav-text-color;
     font-weight: 500;

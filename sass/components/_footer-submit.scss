@@ -21,6 +21,16 @@
     height: 50px;
     background-color: inherit;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 
   &__button {
