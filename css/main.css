@@ -730,6 +730,12 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .social {
+    margin-bottom: 60px;
+  }
+}
+
 .social-invite {
   font-weight: bold;
   font-size: 14px;
