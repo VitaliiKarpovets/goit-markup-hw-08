@@ -218,7 +218,7 @@ body {
   .page-header__media {
     position: absolute;
     top: 32px;
-    right: 0;
+    right: 15px;
     flex-direction: row;
   }
 }
