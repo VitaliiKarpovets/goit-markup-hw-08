@@ -13,7 +13,6 @@
   flex-direction: column;
   background-color: $white-color;
   box-sizing: border-box;
-  //   flex-basis: calc(100% / 3 - 30px);
   width: 100%;
   margin-left: $card-set-gap;
   margin-top: $card-set-gap;
@@ -28,6 +27,10 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 
