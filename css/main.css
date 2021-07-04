@@ -223,15 +223,13 @@ body {
   }
 }
 
-.page-header__item {
+.page-header__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
 @media screen and (min-width: 1200px) {
-  .page-header__item {
-    margin-bottom: 0;
-  }
   .page-header__item:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
