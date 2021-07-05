@@ -56,13 +56,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .section-title {
     font-size: 36px;
     line-height: 1.167;
+    margin-bottom: 50px;
   }
 }
 
@@ -407,6 +408,12 @@ body {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .features__title {
+    text-align: start;
+  }
+}
+
 .features__description {
   font-weight: normal;
   font-size: 14px;
@@ -654,24 +661,10 @@ body {
 
 .footer {
   background-color: #2f303a;
-  max-width: 480px;
   margin: 0 auto;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    max-width: 1600px;
-    text-align: left;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -777,10 +770,16 @@ body {
   cursor: pointer;
   padding-left: 16px;
   font: inherit;
-  width: 450px;
+  width: 100%;
   height: 50px;
   background-color: inherit;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-submit__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -840,6 +839,9 @@ body {
 .menu-container {
   position: relative;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
@@ -884,10 +886,6 @@ body {
 
 .menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.menu-nav__item:last-child {
-  margin-bottom: 302px;
 }
 
 .menu-media {

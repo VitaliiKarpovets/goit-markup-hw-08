@@ -1,6 +1,9 @@
 .menu-container {
   position: relative;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
@@ -47,9 +50,9 @@
     margin-bottom: 32px;
   }
 
-  &__item:last-child {
-    margin-bottom: 302px;
-  }
+  // &__item:last-child {
+  //   margin-bottom: 302px;
+  // }
 }
 
 .menu-media {
